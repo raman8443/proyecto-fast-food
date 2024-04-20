@@ -6,7 +6,7 @@
 
 
 .inicio{
-   	background-color:#B2A9AE;
+	background: linear-gradient(#E54919, #FEFEFE);
 	background-size: cover;
  	background-position: center;
  	color: #fff;
@@ -18,9 +18,10 @@
   	align-items: center;
 }
 .nav{
+	
 	justify-content:space-between;
 	padding: auto;
-	margin-left: 15em; 
+	
 	font-style: italic;
 	color: #fff;
 	font-size: 20px;
