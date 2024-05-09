@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contactos</title>
+</head>
+<body>
+    <header >
+        <div class="encabezado">
+            <img class="imagen_logo" src="../img/logo2.png" alt="logo">
+            <nav class="navegador">
+                <a  href="./fastfoot.html">Menú</a>
+                <a href="">Nosotros</a>
+                <a href="./contactos.html">Contactos</a>
+                <button class="boton_pedido">Pedido online</button>                
+            </nav>
+        </div>
+    </header>
+    <main>
+         <section>
+            <h1 class="titulo_contactos">No dudes en ponerte en contacto con nosotros si tienes dudas o sugerencias.</h1>
+            <form  action="https://formsubmit.co/celinagv2@gmail.com" target="_blank" method="post">
+                <fieldset class="formulario_estilo">
+                    <legend id="leyenda_formulario">Completa con tus datos:</legend><br>
+                    <div class="nombre_formulario">
+                        <label for="primerNombre">Nombres:</label>
+                        <input id="primerNombre" size="30" type="text" name="primerNombre" placeholder="Ingrese su nombre..." required>
+                    </div>
+                    <div class="apellido_formulario">
+                        <label for="apellido" >Apellido:</label>
+                        <input id="apellido" size="30" type="text" name="apellido" placeholder="Ingrese su apellido..." requiered>
+                    </div>
+                    <div class="ciudad_formulario">
+                        <label for="ciudad">Provincia:</label>
+                        <select id="ciudad" name="ciudad" requiered>
+                            <option value="Buenos Aires">Buenos Aires</option>
+                            <option value="Ciudad Autónoma de Buenos Aires">Ciudad Autónoma de Buenos Aires</option>
+                            <option value="Catamarca">Catamarca</option>
+                            <option value="Chaco">Chaco</option>
+                            <option value="Chubut">Chubut</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Corrientes">Corrientes</option>
+                            <option value="Entre Ríos">Entre Ríos</option>
+                            <option value="Formosa">Formosa</option>
+                            <option value="Jujuy">Jujuy</option>
+                            <option value="La Pampa">La Pampa</option>
+                            <option value="La Rioja">La Rioja</option>
+                            <option value="Mendoza">Mendoza</option>
+                            <option value="Misiones">Misiones</option>
+                            <option value="Neuquén">Neuquén</option>
+                            <option value="Río Negro">Río Negro</option>
+                            <option value="Salta">Salta</option>
+                            <option value="San Juan">San Juan</option>
+                            <option value="San Luis">San Luis</option>
+                            <option value="Santa Cruz">Santa Cruz</option>
+                            <option value="Santa Fe">Santa Fe</option>
+                            <option value="Santiago del Estero">Santiago del Estero</option>
+                            <option value="Tierra del Fuego">Tierra del Fuego</option>
+                            <option value="Tucumán">Tucumán</option>
+                        </select>
+                    </div>
+                    <div class="nacimiento_formulario">
+                        <label for="nacimiento">Fecha de nacimiento:</label>
+                        <input id="nacimiento"  type="date" name="nacimiento" placeholder="(dd/mm/aaaa)">
+                    </div>
+                    <div class="celular_formulario">
+                        <label for="celular">Ingrese su número de celular</label>
+                        <input type="number" id="celular" name="celular" placeholder="xxxx-xxxxxx">
+                    </div>
+                    <div class="mensaje_formulario">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" cols="50" maxlength="200"></textarea><br>
+                    </div>
+                </fieldset>
+                <button id="boton_enviar_form">Enviar</button>
+            </form>
+        </section>
+    </main>
+   
+    <footer class="footer">
+        <img class="imagen_logo" src="../img/logo2.png" alt="logo">
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
