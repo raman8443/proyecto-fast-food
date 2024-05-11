@@ -12,7 +12,7 @@ ul, ol {
 
 a {
     text-decoration: none ;  
-    color: beige !important;
+    color: beige ;
     margin-left: 0.5em;
 }
 
@@ -27,6 +27,9 @@ a:hover {
 	margin-left: 20px;	
 	margin-bottom: 25px;
 	width: 40px;	
+}
+header nav a {
+    color: beige ;
 }
 
 #nav {
@@ -59,13 +62,18 @@ footer {
     margin-top: 15px;
 }
 
+footer a i {
+    color:hwb(0 100% 0%);
+    width: 50px;
+    font-size: 25px;
+    
+}
 
 .redes {
-    display: flex;
-    gap: .7em;
+
     border-radius: 50%;
     transition: .3s;
-    margin-right: 5px;
+    
 }
 .redes a:hover{
     color: #fff;
@@ -210,8 +218,9 @@ footer {
     margin-bottom: 25px;
 }
 
-
-
+.minorista_mayorista a {
+    color: #050202;
+}
 
 /* CONTACTOS */
 /* FORMULARIO */
@@ -246,9 +255,27 @@ footer {
 }
 
 
-
-
-
+/* SOBRE NOSOTROS */
+ #img_nosotros {
+    max-width: 320px;
+    margin-bottom: 15px;
+ }
+ .parrafo_nosotros2 {
+    display: none;
+ }
+ .seccion_nosotros1, .seccion_sucursales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .iframe_mapa {
+    margin-bottom: 10px;
+ }
+ #titulo2_nosotros{
+    width: 100vw;
+    text-align: center;
+    background-color: #e8a567;
+ }
 
 
 /* RESPONSIVE */
@@ -302,8 +329,9 @@ footer {
 		
 	}
 	.minorista_mayorista {
-		margin-top: 20px;
+		margin-top: 20px;  
 	}
+    
     .contenedorcarrusel {	
         width: 400px;
         height: 200px;	
@@ -336,6 +364,24 @@ footer {
     grid-column: 1/span 2;
     padding: 1px;
    }
+
+   #titulo2_nosotros{
+    max-width: 90vw;
+   }
+   #img_nosotros {
+    max-width: 700px;
+ }
+
+  .seccion_sucursales{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+
+ }
+ #titulo2_nosotros, #texto_seccion2_nosotros, .seccion_sucursales ul{
+    grid-column: 1/span 2;
+ }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -347,6 +393,13 @@ footer {
     .imagen_logo {
         width: 10%;
     }
+    .parrafo_nosotros2{
+        display: block;
+    }
+    #img_nosotros {
+        max-width: 900px;
+     }
+
 }
 
 
