@@ -164,6 +164,7 @@ main {
 	grid-template-columns:auto auto;	
 	background: linear-gradient(#FEFEFE, rgb(240, 238, 243));
 	padding: 30px;
+    margin-bottom: 10px;
 			    
 }
 .alimentos {
@@ -211,7 +212,7 @@ main {
 
 /* CONTACTOS */
 /* FORMULARIO */
-#boton_enviar_form {
+#boton_enviar_formulario {
 	padding: auto;
 	background-color: red;	
 	color: #fff;
