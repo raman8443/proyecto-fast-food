@@ -52,8 +52,11 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 1em;
-    
+    gap: 1em;   
+}
+
+footer {
+    margin-top: 15px;
 }
 
 
@@ -196,7 +199,7 @@ main {
 
 /* SECCION 4 */
 
-.forma_pago {
+.tipo_menu {
 	background-color: cadetblue;	
 	margin: 20px;
 	border-radius: 20px;	
@@ -213,11 +216,11 @@ main {
 /* CONTACTOS */
 /* FORMULARIO */
 #boton_enviar_formulario {
-	padding: auto;
-	background-color: red;	
-	color: #fff;
+	padding: 4px;
+	color: #080808;
 	text-decoration: none;	
-	border: 1px solid #940253;
+	border: 1px solid #0c0a0b;
+    border-radius: 4px;
 	transition: .3s;
     font-style: italic;
 	font-size: 15px;
@@ -227,6 +230,7 @@ main {
     text-align: center;
     background-color: #ffbc66ad;
     margin-bottom: 1em;
+    font-size: 20px;
 }
 
 .formulario_estilo {
@@ -240,7 +244,6 @@ main {
     font-size: 20px;
     font-style: italic;
 }
-
 
 
 
@@ -298,7 +301,7 @@ main {
 		border-radius: 25px;
 		
 	}
-	.pagar {
+	.minorista_mayorista {
 		margin-top: 20px;
 	}
     .contenedorcarrusel {	
@@ -311,7 +314,28 @@ main {
     }
     .cuadro_ahorro{
         padding: 20px;
-    }   
+    } 
+    .titulo_contactos {
+        font-size: 40px;
+    }
+    
+    form input, form select , form textarea {
+        max-width: 30vw; 
+     } 
+    .formulario_estilo {
+       margin-top: 15px;
+       display: grid;
+       grid-template-columns: repeat(2, auto);
+       gap: 10px;    
+       justify-content: center;
+    }
+   .item_radio {
+    grid-column: 1 / span 2; 
+   }
+   #boton_enviar_formulario {
+    grid-column: 1/span 2;
+    padding: 1px;
+   }
 }
 
 @media screen and (min-width: 1024px) {
