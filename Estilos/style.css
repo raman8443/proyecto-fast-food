@@ -124,6 +124,8 @@ footer a i {
     align-items: center;
 }	
 
+
+
 /* SEGUNDA SECCION DEL INDEX */
 #titulo_seccion2 {
     font-size: 17px;
@@ -222,6 +224,109 @@ footer a i {
 .minorista_mayorista a {
     color: #050202;
 }
+
+
+/* Otras secciones */
+.sabores{
+    padding: 80px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("../img/comidarapida.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff;
+    height: 400px;
+}
+.sabores .contenido-seccion{
+    max-width: 1000px;
+	height: 400px;
+    margin: auto;
+    padding: 0 10px;
+   
+}
+.info {
+    display: flex;
+    text-align: justify;
+    width: 90%;
+    color:white;	
+    font-size: 1em;
+    border-radius: 10px;		
+    height: 15px;
+}
+
+.info:hover {		
+    display: flex;
+    background-color: #ebba8c;
+    color: #000;
+    height: auto;
+}
+
+/* MENU */
+.container {
+    width: 94%;
+    margin: 0 auto;
+  }
+  
+  .contenidoPrincipal {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .contenidoPrincipal-menu-link {
+    height: 100px;
+    background-color: white;
+    text-align: center;
+    margin: 1%;
+    transition: 0.3s;
+    box-shadow: 2px, 2px, 2px gray;
+    position: relative;
+  }
+  
+  .contenidoPrincipal-menu-link a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* position: absolute;*/
+    top: 0;
+    left: 0;
+  }
+  
+  .contenidoPrincipal-menu-link:hover {
+    box-shadow: 4px 4px 4px #ccc;
+    border-radius: 15px;
+  }
+  
+  .contenidoPrincipal-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .contenidoPrincipal-menu-link {
+    display: flex;
+    width: 31%;
+  }
+  
+  .contenidoPrincipal-menu-link a:before {
+    content: "";
+    display: block;
+    width: 50px;
+    margin: 10px auto;
+  }
+
+/* RESPONSIVE MENU*/
+@media (max-width: 768px) {
+    .contenidoPrincipal-menu {
+      flex-direction: column;
+    }
+    .contenidoPrincipal-menu-link {
+      width: 100%;
+    }
+  }
+
 
 /* CONTACTOS */
 /* FORMULARIO */
@@ -387,7 +492,10 @@ footer a i {
     grid-column: 1/span 2;
  }
 
+
 }
+
+
 
 @media screen and (min-width: 1024px) {
     #nav {

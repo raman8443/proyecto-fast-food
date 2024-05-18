@@ -1,5 +1,4 @@
 
-
 // Menu responsive
 
 const menuCirculo = document.querySelector(".menucirculo")
@@ -39,3 +38,14 @@ const validar_formulario = (nombre, mensaje, email) => {
 
 validar_formulario(validarNombre, validarMensaje, validarEmail);
 
+
+
+// Menu
+
+let btnMenu = document.getElementById('btnMenu');
+let menu = document.getElementById('menu');
+
+btnMenu.addEventListener('click', function(){
+   'use strict'; 
+    menu.classList.toggle('mostrar');
+});
