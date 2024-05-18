@@ -58,6 +58,7 @@ main {
     gap: 1em;   
 }
 
+
 footer {
     margin-top: 15px;
 }
@@ -254,7 +255,9 @@ footer a i {
     font-style: italic;
 }
 
-
+.errorEnvio {
+    color: red;
+}
 /* SOBRE NOSOTROS */
  #img_nosotros {
     max-width: 320px;
@@ -278,6 +281,8 @@ footer a i {
  }
 
 
+ 
+
 /* RESPONSIVE */
 
 @media screen and (min-width: 768px) {
@@ -296,7 +301,7 @@ footer a i {
         display: none;
        }
     #nav {
-        display: block;
+        display: block!important;
         gap: .7em; 
         font-style: italic;
         font-size: 15px;
